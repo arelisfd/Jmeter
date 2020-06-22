@@ -53,7 +53,7 @@
 
 WDS.sampleResult.sampleStart();
 WDS.sampleResult.getLatency();
-WDS.log.info(&quot;Sample started&quot;);
+WDS.log.info(&quot;Sample startedwefsdsd sdfsdfs sd&quot;);
 
 WDS.browser.get(&apos;https://gen.pa.sura.uat.ctplc.ltd:9074/insis_gen_v10/faces/login.jspx&apos;);
 
