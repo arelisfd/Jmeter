@@ -1,0 +1,8 @@
+1-cpten3qic
+
+pageTemplate:mainRegion:1:r_j_id1201981:0:formTemplate1:pdynam1:1:dynam1:0:pt1:s1soc1
+pageTemplate:mainRegion:1:r_j_id1201981:0:formTemplate1:pdynam1:1:dynam1:0:pt1:egnId
+
+
+
+new AdfFacesMessage(AdfFacesMessage.TYPE_ERROR,'No. de identificaci\xf3n','Este PID ya existe. \xa1Trate de recuperar la persona!',null));Ad

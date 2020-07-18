@@ -1,0 +1,14 @@
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML\1-CreacionCliente-Editado-CSV.jmx -l 
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML\ReportExecution.csv -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML\ReportHTMLTest
+			 
+
+
+/**SE EJECUTA ESTO
+
+
+
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML\1-CreacionCliente-Editado-CSV.jmx -l C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML\ReportExecution.csv -e -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML\ReportHTMLTest
+

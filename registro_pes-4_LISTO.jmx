@@ -70,15 +70,15 @@
       </CacheManager>
       <hashTree/>
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-        <stringProp name="filename">/home/arelis/Escritorio/PES/ExportCSV.csv</stringProp>
-        <stringProp name="fileEncoding"></stringProp>
-        <stringProp name="variableNames"></stringProp>
-        <boolProp name="ignoreFirstLine">false</boolProp>
         <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename"></stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
         <boolProp name="quotedData">false</boolProp>
         <boolProp name="recycle">true</boolProp>
-        <boolProp name="stopThread">false</boolProp>
         <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames"></stringProp>
       </CSVDataSet>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
@@ -279,15 +279,6 @@
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P63_APP_SESSION" enabled="true">
-              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-              <stringProp name="RegexExtractor.refname">P63_APP_SESSION</stringProp>
-              <stringProp name="RegexExtractor.regex">&lt;input type=&quot;hidden&quot; id=&quot;P63_APP_SESSION&quot; name=&quot;P63_APP_SESSION&quot; value=&quot;(.+?)&quot;&gt;</stringProp>
-              <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default"></stringProp>
-              <stringProp name="RegexExtractor.match_number">1</stringProp>
-            </RegexExtractor>
-            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="3- https://www.mypeslive.com/apex/wwv_flow.accept" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -321,7 +312,7 @@
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="p_instance" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">p_instance</stringProp>
                   <stringProp name="Argument.value">${p_instance}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -337,7 +328,7 @@
                 <elementProp name="p_json" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">p_json</stringProp>
-                  <stringProp name="Argument.value">{&quot;pageItems&quot;:{&quot;itemsToSubmit&quot;:[{&quot;n&quot;:&quot;P63_USR_USERNAME&quot;,&quot;v&quot;:&quot;${usuario}&quot;},{&quot;n&quot;:&quot;P63_USR_EMAIL&quot;,&quot;v&quot;:&quot;${email}&quot;},{&quot;n&quot;:&quot;P63_USR_NOMBRE&quot;,&quot;v&quot;:&quot;${nombre}&quot;},{&quot;n&quot;:&quot;P63_APELLIDO&quot;,&quot;v&quot;:&quot;${apellido}&quot;},{&quot;n&quot;:&quot;P63_USR_CLAVE&quot;,&quot;v&quot;:&quot;${clave}&quot;},{&quot;n&quot;:&quot;P63_USR_REPEAT_PASS&quot;,&quot;v&quot;:&quot;${confirmarClave}&quot;},{&quot;n&quot;:&quot;P63_TERMINOS&quot;,&quot;v&quot;:[&quot;S&quot;]},{&quot;n&quot;:&quot;P63_ACEPTA_TERM&quot;,&quot;v&quot;:&quot;Debe aceptar términos y condiciones.&quot;,&quot;ck&quot;:&quot;${P63_ACEPTA_TERM}&quot;},{&quot;n&quot;:&quot;P63_FB_USERNAME&quot;,&quot;v&quot;:&quot;&quot;},{&quot;n&quot;:&quot;P63_FB_USERID_PWD&quot;,&quot;v&quot;:&quot;&quot;},{&quot;n&quot;:&quot;P63_APP_SESSION&quot;,&quot;v&quot;:&quot;${P63_APP_SESSION}&quot;},{&quot;n&quot;:&quot;P63_PAGE_ID&quot;,&quot;v&quot;:&quot;63&quot;,&quot;ck&quot;:&quot;${P63_PAGE_ID}&quot;},{&quot;n&quot;:&quot;P63_USERNAME&quot;,&quot;v&quot;:&quot;${usuario}&quot;},{&quot;n&quot;:&quot;P63_PASSWORD&quot;,&quot;v&quot;:&quot;${clave}&quot;},{&quot;n&quot;:&quot;P63_FB_USERNAME_1&quot;,&quot;v&quot;:&quot;&quot;},{&quot;n&quot;:&quot;P63_FB_USERID_PWD_1&quot;,&quot;v&quot;:&quot;&quot;}],&quot;protected&quot;:&quot;${pPageItemsProtected}&quot;,&quot;rowVersion&quot;:&quot;&quot;},&quot;salt&quot;:&quot;${pSalt}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;pageItems&quot;:{&quot;itemsToSubmit&quot;:[{&quot;n&quot;:&quot;P63_USR_USERNAME&quot;,&quot;v&quot;:&quot;test5&quot;},{&quot;n&quot;:&quot;P63_USR_EMAIL&quot;,&quot;v&quot;:&quot;test5@gmail.com&quot;},{&quot;n&quot;:&quot;P63_USR_NOMBRE&quot;,&quot;v&quot;:&quot;test55&quot;},{&quot;n&quot;:&quot;P63_APELLIDO&quot;,&quot;v&quot;:&quot;test56&quot;},{&quot;n&quot;:&quot;P63_USR_CLAVE&quot;,&quot;v&quot;:&quot;123456&quot;},{&quot;n&quot;:&quot;P63_USR_REPEAT_PASS&quot;,&quot;v&quot;:&quot;123456&quot;},{&quot;n&quot;:&quot;P63_TERMINOS&quot;,&quot;v&quot;:[&quot;S&quot;]},{&quot;n&quot;:&quot;P63_ACEPTA_TERM&quot;,&quot;v&quot;:&quot;Debe aceptar términos y condiciones.&quot;,&quot;ck&quot;:&quot;${P63_ACEPTA_TERM}&quot;},{&quot;n&quot;:&quot;P63_FB_USERNAME&quot;,&quot;v&quot;:&quot;&quot;},{&quot;n&quot;:&quot;P63_FB_USERID_PWD&quot;,&quot;v&quot;:&quot;&quot;},{&quot;n&quot;:&quot;P63_APP_SESSION&quot;,&quot;v&quot;:&quot;5388413586300&quot;},{&quot;n&quot;:&quot;P63_PAGE_ID&quot;,&quot;v&quot;:&quot;63&quot;,&quot;ck&quot;:&quot;${P63_PAGE_ID}&quot;},{&quot;n&quot;:&quot;P63_USERNAME&quot;,&quot;v&quot;:&quot;test5&quot;},{&quot;n&quot;:&quot;P63_PASSWORD&quot;,&quot;v&quot;:&quot;123456&quot;},{&quot;n&quot;:&quot;P63_FB_USERNAME_1&quot;,&quot;v&quot;:&quot;&quot;},{&quot;n&quot;:&quot;P63_FB_USERID_PWD_1&quot;,&quot;v&quot;:&quot;&quot;}],&quot;protected&quot;:&quot;${pPageItemsProtected}&quot;,&quot;rowVersion&quot;:&quot;&quot;},&quot;salt&quot;:&quot;${pSalt}&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>

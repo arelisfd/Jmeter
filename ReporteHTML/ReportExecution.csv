@@ -1,0 +1,19 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1594961340871,1888,Open file CSV   “message”,200,OK,Thread Group 1-1,text,true,"Nice, exelente",917,163,1,1,https://samples.openweathermap.org/data/2.5/weather?q=city&appid=appid,1884,0,1680
+1594961342803,1302,Home  16 07  2020  23 49 02,200,OK,Thread Group 1-1,text,true,"Nice, exelente",123088,502,1,1,https://eldeber.com.bo/,473,0,400
+1594961342803,474,Home  16 07  2020  23 49 02-0,301,Moved Permanently,Thread Group 1-1,text,true,,646,130,1,1,https://www.eldeber.com.bo/index.html,473,0,400
+1594961343308,437,Home  16 07  2020  23 49 02-1,302,Found,Thread Group 1-1,text,true,,752,126,1,1,https://eldeber.com.bo/index.html,436,0,342
+1594961343745,71,Home  16 07  2020  23 49 02-2,302,Found,Thread Group 1-1,text,true,,617,130,1,1,https://eldeber.com.bo/Error/NotFound,71,0,0
+1594961343816,289,Home  16 07  2020  23 49 02-3,200,OK,Thread Group 1-1,text,true,,121073,116,1,1,https://eldeber.com.bo/,75,0,0
+1594961344106,642,Farandula    1,200,OK,Thread Group 1-1,text,true,"Nice, exelente",38488,354,1,1,https://eldeber.com.bo/166004_el-dia-en-que-kirk-douglas-vio-a-teatro-de-los-andes,77,0,0
+1594961344106,77,Farandula    1-0,301,Moved Permanently,Thread Group 1-1,text,true,,744,179,1,1,https://www.eldeber.com.bo/166004_el-dia-en-que-kirk-douglas-vio-a-teatro-de-los-andes,77,0,0
+1594961344183,565,Farandula    1-1,200,OK,Thread Group 1-1,text,true,,37744,175,1,1,https://eldeber.com.bo/166004_el-dia-en-que-kirk-douglas-vio-a-teatro-de-los-andes,559,0,0
+1594961344753,959,Deportivo 6,200,OK,Thread Group 1-1,text,true,"Nice, exelente",45454,396,1,1,https://eldeber.com.bo/165951_kaka-si-psg-gana-la-champions-neymar-ganara-el-balon-de-oro-probablemente,81,0,0
+1594961344753,82,Deportivo 6-0,301,Moved Permanently,Thread Group 1-1,text,true,,786,200,1,1,https://www.eldeber.com.bo/165951_kaka-si-psg-gana-la-champions-neymar-ganara-el-balon-de-oro-probablemente,81,0,0
+1594961344835,877,Deportivo 6-1,200,OK,Thread Group 1-1,text,true,,44668,196,1,1,https://eldeber.com.bo/165951_kaka-si-psg-gana-la-champions-neymar-ganara-el-balon-de-oro-probablemente,874,0,0
+1594961345715,1286,Corona Virus,200,OK,Thread Group 1-1,text,true,"Nice, exelente",48822,432,1,1,https://eldeber.com.bo/165956_coronavirus-por-que-el-nuevo-virus-aun-no-tiene-nombre-y-por-que-es-importante-que-lo-tenga,434,0,349
+1594961345715,434,Corona Virus-0,301,Moved Permanently,Thread Group 1-1,text,true,,822,218,1,1,https://www.eldeber.com.bo/165956_coronavirus-por-que-el-nuevo-virus-aun-no-tiene-nombre-y-por-que-es-importante-que-lo-tenga,434,0,349
+1594961346149,852,Corona Virus-1,200,OK,Thread Group 1-1,text,true,,48000,214,1,1,https://eldeber.com.bo/165956_coronavirus-por-que-el-nuevo-virus-aun-no-tiene-nombre-y-por-que-es-importante-que-lo-tenga,773,0,256
+1594961347003,696,Avion Rusia,200,OK,Thread Group 1-1,text,true,"Nice, exelente",35778,374,1,1,https://eldeber.com.bo/166211_avion-con-100-personas-a-bordo-aterriza-de-emergencia-en-rusia,83,0,0
+1594961347003,83,Avion Rusia-0,301,Moved Permanently,Thread Group 1-1,text,true,,764,189,1,1,https://www.eldeber.com.bo/166211_avion-con-100-personas-a-bordo-aterriza-de-emergencia-en-rusia,83,0,0
+1594961347086,613,Avion Rusia-1,200,OK,Thread Group 1-1,text,true,,35014,185,1,1,https://eldeber.com.bo/166211_avion-con-100-personas-a-bordo-aterriza-de-emergencia-en-rusia,612,0,0

@@ -1,0 +1,10 @@
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Flujo-Integrado-V4.jmx
+
+jmeter -g C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\RegistroCliente1.csv -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLRegistroCliente1
+
+jmeter -g C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Cotizacion2.csv -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLCotizacion2
+
+jmeter -g C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\EmisionPago3.csv -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLEmisionPago3
+
+jmeter -g C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Devolucion4.csv -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLDevolucion4
+

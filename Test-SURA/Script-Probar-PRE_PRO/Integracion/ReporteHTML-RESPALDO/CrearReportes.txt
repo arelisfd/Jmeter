@@ -1,0 +1,62 @@
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Flujo-Integrado-V4.jmx -l 
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\ReportExecution.csv -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\ReportHTMLTest
+			 
+
+
+/**SE EJECUTA ESTO
+
+
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Flujo-Integrado-V4.jmx -l C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\ReportExecution.csv -e -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\ReportHTMLTest
+
+
+/*********************************************************************************************
+
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Flujo-Integrado-V4.jmx -l 
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\RegistroCliente1.csv -l 
+	     C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Cotizacion2.csv -l
+	     C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\EmisionPago3.csv -l
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Devolucion4.csv -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLRegistroCliente1 -e -o
+	     C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLCotizacion2 -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLEmisionPago3 -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLDevolucion4
+
+
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Flujo-Integrado-V4.jmx -l C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\RegistroCliente1.csv -l C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Cotizacion2.csv -l C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\EmisionPago3.csv -l C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Devolucion4.csv -e -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLRegistroCliente1 -e -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLCotizacion2 -e -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLEmisionPago3 -e -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLDevolucion4
+
+
+/*******************************************************************************
+
+
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Flujo-Integrado-V4.jmx -l 
+	     C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\RegistroCliente1.csv -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLRegistroCliente1 
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Flujo-Integrado-V4.jmx -l
+	     C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Cotizacion2.csv -e -o
+	     C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLCotizacion2
+	    
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Flujo-Integrado-V4.jmx -l
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\EmisionPago3.csv -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLEmisionPago3 
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Flujo-Integrado-V4.jmx -l
+	     C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Devolucion4.csv -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLDevolucion4
+
+
+
+
+
+
+
+
+
+
+
