@@ -1,0 +1,19 @@
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\Reports\TestReportGraf.jmx -l 
+             C:\Jmeter\apache-jmeter-5.2.1\bin\Reports\ReportExecution.csv -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\Reports\ReportHTML
+			 
+/***********************************
+
+
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\TestPlan\ReporteHTML\TestReportGraf.jmx -l 
+             C:\Jmeter\apache-jmeter-5.2.1\bin\TestPlan\ReporteHTML\ReportExecution.csv -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\TestPlan\ReporteHTML\ReportHTMLTest
+			 
+
+
+/**SE EJECUTA ESTO
+
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\ReporteHTML\TestReportGraf.jmx -l C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\ReporteHTML\ReportExecution.csv -e -o C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\ReporteHTML\ReportHTMLTest
+			 

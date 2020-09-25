@@ -1,0 +1,32 @@
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML\1-CreacionCliente-Editado-CSV.jmx -l 
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML\ReportExecution.csv -e -o
+             C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML\ReportHTMLTest
+			 
+
+
+/**SE EJECUTA ESTO
+
+
+
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\1-CreacionCliente-Editado-CSV.jmx -l C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\ReportExecution.csv -e -o C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\ReportHTMLTest
+
+*----------
+
+
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\1-CreacionCliente-Editado-CSV.jmx -l C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\ReportExecution.csv 
+
+
+
+FilterResults.bat --output-file C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\filteredout.csv --input-file C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\ReportExecution.csv  --start-offset 1 --end-offset 2
+
+
+
+jmeter -g C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\filteredout.csv -o C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\ReportHTMLTest
+
+
+
+/**..
+
+FilterResults.bat --output-file C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\filteredout.csv --input-file C:\Jmeter\apache-jmeter-5.2.1\bin\Jmeter-Git\Test-SURA\Script-Probar-PRE_PRO\1-RegistroCliente\ReporteHTML-test2\ReportExecution.csv --end-offset 120

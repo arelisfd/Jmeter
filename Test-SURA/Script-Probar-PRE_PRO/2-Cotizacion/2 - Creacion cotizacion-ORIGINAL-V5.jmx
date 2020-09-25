@@ -50,7 +50,7 @@
           </elementProp>
           <elementProp name="cedula" elementType="Argument">
             <stringProp name="Argument.name">cedula</stringProp>
-            <stringProp name="Argument.value">2-9969-88547</stringProp>
+            <stringProp name="Argument.value">4-569-336</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="id_poliza_13" elementType="Argument">

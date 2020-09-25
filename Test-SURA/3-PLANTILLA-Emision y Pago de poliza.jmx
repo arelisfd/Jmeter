@@ -78,8 +78,8 @@
             <stringProp name="Argument.value">data_inicial_id_cliente</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="id_agente" elementType="Argument">
-            <stringProp name="Argument.name">id_agente</stringProp>
+          <elementProp name="num_agente" elementType="Argument">
+            <stringProp name="Argument.name">num_agente</stringProp>
             <stringProp name="Argument.value">data_inicial_id_agente</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>

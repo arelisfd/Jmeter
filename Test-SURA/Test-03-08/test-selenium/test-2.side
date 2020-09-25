@@ -1,0 +1,177 @@
+{
+  "id": "b7690259-3e30-467a-bab6-a2206ae750b4",
+  "version": "2.0",
+  "name": "test-2",
+  "url": "https://gen.pa.sura.uat.ctplc.ltd:9074",
+  "tests": [{
+    "id": "e5c96460-88c8-4d49-83c0-8792a891b852",
+    "name": "Test-2-Cliente",
+    "commands": [{
+      "id": "6e6fba24-f94f-4ebd-8647-462f8fe35592",
+      "comment": "",
+      "command": "open",
+      "target": "/insis_gen_v10/faces/login.jspx?_afrLoop=2408435700644901&_afrWindowMode=0&_adf.ctrl-state=116q9m1py_14",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98caf07e-002a-44fa-a879-6ffddaf94a7b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "751ce335-15b2-47f7-a435-553d446d5171",
+      "comment": "",
+      "command": "click",
+      "target": "id=pt1:pt_s2:usrname::content",
+      "targets": [
+        ["id=pt1:pt_s2:usrname::content", "id"],
+        ["name=pt1:pt_s2:usrname", "name"],
+        ["css=#pt1\\3Apt_s2\\3Ausrname\\3A\\3A content", "css:finder"],
+        ["xpath=//input[@id='pt1:pt_s2:usrname::content']", "xpath:attributes"],
+        ["xpath=//span[@id='pt1:pt_s2:usrname']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02e6d260-f39e-4f22-a45b-1e961f18800d",
+      "comment": "",
+      "command": "click",
+      "target": "id=pt1:pt_s2:usrname::content",
+      "targets": [
+        ["id=pt1:pt_s2:usrname::content", "id"],
+        ["name=pt1:pt_s2:usrname", "name"],
+        ["css=#pt1\\3Apt_s2\\3Ausrname\\3A\\3A content", "css:finder"],
+        ["xpath=//input[@id='pt1:pt_s2:usrname::content']", "xpath:attributes"],
+        ["xpath=//span[@id='pt1:pt_s2:usrname']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60df176a-9528-4131-8737-f0009be27176",
+      "comment": "",
+      "command": "click",
+      "target": "id=pt1:pt_s2:usrname::content",
+      "targets": [
+        ["id=pt1:pt_s2:usrname::content", "id"],
+        ["name=pt1:pt_s2:usrname", "name"],
+        ["css=#pt1\\3Apt_s2\\3Ausrname\\3A\\3A content", "css:finder"],
+        ["xpath=//input[@id='pt1:pt_s2:usrname::content']", "xpath:attributes"],
+        ["xpath=//span[@id='pt1:pt_s2:usrname']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8ceec1e-6378-46bd-baf1-30a1966adcea",
+      "comment": "",
+      "command": "click",
+      "target": "id=pt1:pt_s2:usrname::content",
+      "targets": [
+        ["id=pt1:pt_s2:usrname::content", "id"],
+        ["name=pt1:pt_s2:usrname", "name"],
+        ["css=#pt1\\3Apt_s2\\3Ausrname\\3A\\3A content", "css:finder"],
+        ["xpath=//input[@id='pt1:pt_s2:usrname::content']", "xpath:attributes"],
+        ["xpath=//span[@id='pt1:pt_s2:usrname']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f4e5c12-4db2-4afa-a35a-2f1d5ab2d9ca",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=pt1:pt_s2:usrname::content",
+      "targets": [
+        ["id=pt1:pt_s2:usrname::content", "id"],
+        ["name=pt1:pt_s2:usrname", "name"],
+        ["css=#pt1\\3Apt_s2\\3Ausrname\\3A\\3A content", "css:finder"],
+        ["xpath=//input[@id='pt1:pt_s2:usrname::content']", "xpath:attributes"],
+        ["xpath=//span[@id='pt1:pt_s2:usrname']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "744f9609-0aee-4e14-8de2-5091aba7937a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pt1:pt_s2:usrname::content",
+      "targets": [
+        ["id=pt1:pt_s2:usrname::content", "id"],
+        ["name=pt1:pt_s2:usrname", "name"],
+        ["css=#pt1\\3Apt_s2\\3Ausrname\\3A\\3A content", "css:finder"],
+        ["xpath=//input[@id='pt1:pt_s2:usrname::content']", "xpath:attributes"],
+        ["xpath=//span[@id='pt1:pt_s2:usrname']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "sura_uno"
+    }, {
+      "id": "684a0391-3db6-4db3-adc3-f8a4c6957ca5",
+      "comment": "",
+      "command": "click",
+      "target": "id=pt1:pt_s2:pswd::content",
+      "targets": [
+        ["id=pt1:pt_s2:pswd::content", "id"],
+        ["name=pt1:pt_s2:pswd", "name"],
+        ["css=#pt1\\3Apt_s2\\3Apswd\\3A\\3A content", "css:finder"],
+        ["xpath=//input[@id='pt1:pt_s2:pswd::content']", "xpath:attributes"],
+        ["xpath=//span[@id='pt1:pt_s2:pswd']/input", "xpath:idRelative"],
+        ["xpath=//td[3]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c28e9bc-7aee-4b42-a8c5-567bb9773ee5",
+      "comment": "",
+      "command": "type",
+      "target": "id=pt1:pt_s2:pswd::content",
+      "targets": [
+        ["id=pt1:pt_s2:pswd::content", "id"],
+        ["name=pt1:pt_s2:pswd", "name"],
+        ["css=#pt1\\3Apt_s2\\3Apswd\\3A\\3A content", "css:finder"],
+        ["xpath=//input[@id='pt1:pt_s2:pswd::content']", "xpath:attributes"],
+        ["xpath=//span[@id='pt1:pt_s2:pswd']/input", "xpath:idRelative"],
+        ["xpath=//td[3]/span/input", "xpath:position"]
+      ],
+      "value": "sura_uno"
+    }, {
+      "id": "d53f42a4-90ea-42ae-adcf-b906a1a88daf",
+      "comment": "",
+      "command": "click",
+      "target": "id=pt1:pt_s2:login::icon",
+      "targets": [
+        ["id=pt1:pt_s2:login::icon", "id"],
+        ["css=#pt1\\3Apt_s2\\3Alogin\\3A\\3Aicon", "css:finder"],
+        ["xpath=//img[@id='pt1:pt_s2:login::icon']", "xpath:attributes"],
+        ["xpath=//a[@id='pt1:pt_s2:login']/img", "xpath:idRelative"],
+        ["xpath=//td/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eefbff3-563b-40cf-aa9f-9a577cf5d149",
+      "comment": "",
+      "command": "click",
+      "target": "id=pageTemplate:treeMenu:0:treeMenuLink",
+      "targets": [
+        ["id=pageTemplate:treeMenu:0:treeMenuLink", "id"],
+        ["linkText=Operaciones del Sistema", "linkText"],
+        ["css=#pageTemplate\\3AtreeMenu\\3A 0\\3AtreeMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Operaciones del Sistema')]", "xpath:link"],
+        ["xpath=//a[@id='pageTemplate:treeMenu:0:treeMenuLink']", "xpath:attributes"],
+        ["xpath=//div[@id='pageTemplate:treeMenu::db']/table/tbody/tr/td/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[10]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Operaciones del Sistema')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "395203fa-8b2d-4a97-b295-6f95a4e2dbd7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e5c96460-88c8-4d49-83c0-8792a891b852"]
+  }],
+  "urls": ["https://gen.pa.sura.uat.ctplc.ltd:9074/"],
+  "plugins": []
+}

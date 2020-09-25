@@ -1,0 +1,210 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,failureMessage,bytes,grpThreads,allThreads,Latency,SampleCount,ErrorCount,Hostname
+1597192071892,485,1.1 Se selecciona Inicio-1,200,OK,Thread Group 1-1,true,,8706,1,1,485,1,0,INFOS-372
+1597192072381,257,1.2 Se Selecciona Index-2,200,OK,Thread Group 1-1,true,,17557,1,1,138,1,0,INFOS-372
+1597192071885,742,1 - Seleccionar Index,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,true,,26263,1,1,623,1,0,INFOS-372
+1597192072641,250,2.1 Ingresar user name y pass-3,200,OK,Thread Group 1-1,true,,9170,1,1,158,1,0,INFOS-372
+1597192072892,1690,2.3 - Presionar aceptar Login-5,200,OK,Thread Group 1-1,true,,57406,1,1,104,1,0,INFOS-372
+1597192072639,1940,2 - Login,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,true,,66576,1,1,262,1,0,INFOS-372
+1597192074587,544,3.1 - Seleccionar en el menu Operaciones del Sistema-7,200,OK,Thread Group 1-1,true,,13967,1,1,443,1,0,INFOS-372
+1597192074584,544,3 - Seleccionar en el menu Operaciones del Sistema,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,true,,13967,1,1,443,1,0,INFOS-372
+1597192075132,121,4.1 - Seleccionar Modulo de Personas-8,200,OK,Thread Group 1-1,true,,20882,1,1,118,1,0,INFOS-372
+1597192075131,121,4 - Seleccionar en el menu Modulo de Personas,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,true,,20882,1,1,118,1,0,INFOS-372
+1597192075257,813,5.1 - Seleccionar en el menu Cliente-9,200,OK,Thread Group 1-1,true,,132796,1,1,601,1,0,INFOS-372
+1597192076073,145,5.2 -Hacer clic en la opcion Cliente-10,200,OK,Thread Group 1-1,true,,2228,1,1,134,1,0,INFOS-372
+1597192075255,958,5 - Seleccionar en el menu Clientes,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,true,,135024,1,1,735,1,0,INFOS-372
+1597192076223,733,6.1 - Presionar boton Nuevo Cliente-11,200,OK,Thread Group 1-1,true,,1224,1,1,724,1,0,INFOS-372
+1597192076961,823,6.2 - Presionar boton Nuevo Cliente-12,200,OK,Thread Group 1-1,true,,151213,1,1,504,1,0,INFOS-372
+1597192077789,141,6.3 - Presionar boton Nuevo Cliente-13,200,OK,Thread Group 1-1,true,,1568,1,1,138,1,0,INFOS-372
+1597192077935,321,6.4 - Presionar boton Nuevo Cliente-14,200,OK,Thread Group 1-1,true,,1504,1,1,317,1,0,INFOS-372
+1597192076218,2018,6 - Presionar boton Nuevo Cliente,200,"Number of samples in transaction : 4, number of failing samples : 0",Thread Group 1-1,true,,155509,1,1,1683,1,0,INFOS-372
+1597192078261,372,7.1 - Se abre Formulario Persona-15,200,OK,Thread Group 1-1,true,,39088,1,1,309,1,0,INFOS-372
+1597192078639,314,7.2 - Se abre Formulario Persona-16,200,OK,Thread Group 1-1,true,,39465,1,1,253,1,0,INFOS-372
+1597192078957,445,7.4 - Formulario Datos de la Persona Identificacion-17,200,OK,Thread Group 1-1,true,,2032,1,1,445,1,0,INFOS-372
+1597192079408,879,7.5 - Formulario Datos de la Persona Identificacion-18,200,OK,Thread Group 1-1,true,,2032,1,1,877,1,0,INFOS-372
+1597192080290,342,7.6 - Formulario Datos de la Persona Identificacion-19,200,OK,Thread Group 1-1,false,Test failed: text expected not to contain /Este PID ya existe/,2286,1,1,337,1,1,INFOS-372
+1597192080637,404,7.7 - Formulario Persona Digito Verificador y Fecha de Vencimiento-20,200,OK,Thread Group 1-1,true,,1064,1,1,400,1,0,INFOS-372
+1597192081045,299,7.8 - Formulario Datos de la Persona Nombre-21,200,OK,Thread Group 1-1,true,,1063,1,1,295,1,0,INFOS-372
+1597192081349,376,7.9 - Formulario Datos de la Persona Primer Apellido-22,200,OK,Thread Group 1-1,true,,1063,1,1,376,1,0,INFOS-372
+1597192081727,673,7.10 - Formulario Datos de la Persona Segundo Apellido-23,200,OK,Thread Group 1-1,true,,1062,1,1,672,1,0,INFOS-372
+1597192082404,471,7.11 - Formulario Datos de la Persona Buscar Ocupacion-24,200,OK,Thread Group 1-1,true,,1272,1,1,471,1,0,INFOS-372
+1597192082881,371,7.12 - Formulario Datos de la Persona Buscar Ocupacion-25,200,OK,Thread Group 1-1,true,,27171,1,1,274,1,0,INFOS-372
+1597192083254,385,7.13 - Formulario Datos de la Persona Buscar Ocupacion-26,200,OK,Thread Group 1-1,true,,1069,1,1,384,1,0,INFOS-372
+1597192083645,328,7.14 - Formulario Datos de la Persona Seleccionar Ocupacion-27,200,OK,Thread Group 1-1,true,,3186,1,1,327,1,0,INFOS-372
+1597192083978,739,7.15 - Formulario Datos de la Persona Seleccionar Genero-28,200,OK,Thread Group 1-1,true,,1428,1,1,739,1,0,INFOS-372
+1597192084723,296,7.16 - Formulario Datos de la Persona Seleccionar Genero-29,200,OK,Thread Group 1-1,true,,1038,1,1,295,1,0,INFOS-372
+1597192085021,380,7.17 - Formulario Datos de la Persona Fecha de Nacimiento-30,200,OK,Thread Group 1-1,true,,2523,1,1,377,1,0,INFOS-372
+1597192085403,369,7.18 - Formulario Datos de la Persona Pais-31,200,OK,Thread Group 1-1,true,,2023,1,1,369,1,0,INFOS-372
+1597192085777,422,7.19 - Formulario Datos de la Persona Nacionalidad-32,200,OK,Thread Group 1-1,true,,1965,1,1,421,1,0,INFOS-372
+1597192086202,1011,7.20.1 - Presionar Grabar Datos de la Persona -33,200,OK,Thread Group 1-1,false,Test failed: text expected not to contain /Este PID ya existe/,139550,1,1,702,1,1,INFOS-372
+1597192087227,254,7.20.2 - Presionar Grabar Datos de la Persona -34,200,OK,Thread Group 1-1,true,,467,1,1,241,1,0,INFOS-372
+1597192086200,1265,7.20 - Presionar Grabar Datos de la Persona ,,"Number of samples in transaction : 2, number of failing samples : 1",Thread Group 1-1,false,,140017,1,1,943,1,1,INFOS-372
+1597192078257,9130,7 - Formulario Datos de la Persona,,"Number of samples in transaction : 20, number of failing samples : 2",Thread Group 1-1,false,,270847,1,1,8564,1,1,INFOS-372
+1597192087483,315,8.1 - Llenar Formulario Datos de Cliente-35,200,OK,Thread Group 1-1,true,,1298,1,1,311,1,0,INFOS-372
+1597192087800,398,8.2 - Seleccionar Datos de Cliente-36,200,OK,Thread Group 1-1,true,,1067,1,1,395,1,0,INFOS-372
+1597192088204,1007,8.3.1 - Formulario Datos de Cliente Grabar-37,200,OK,Thread Group 1-1,false,Test failed: text expected not to contain /Este PID ya existe/,134510,1,1,718,1,1,INFOS-372
+1597192089217,233,8.3.2 - Formulario Datos de Cliente Grabar-38,200,OK,Thread Group 1-1,true,,467,1,1,223,1,0,INFOS-372
+1597192088199,1240,8.3 - Formulario Datos de Cliente Grabar,,"Number of samples in transaction : 2, number of failing samples : 1",Thread Group 1-1,false,,134977,1,1,941,1,1,INFOS-372
+1597192087482,1953,8 - Llenar Formulario Datos de Cliente,,"Number of samples in transaction : 4, number of failing samples : 1",Thread Group 1-1,false,,137342,1,1,1647,1,1,INFOS-372
+1597192089452,396,9.1 - Hacer clic en Crear Domicilio-39,200,OK,Thread Group 1-1,true,,47313,1,1,338,1,0,INFOS-372
+1597192089450,396,9 - Seleccionar Domicilio,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,true,,47313,1,1,338,1,0,INFOS-372
+1597192089856,641,10.1 - Formulario Domicilio Tipo de direccion-40,200,OK,Thread Group 1-1,true,,16743,1,1,637,1,0,INFOS-372
+1597192090500,883,10.2 - Formulario Domicilio Provincia Pais de residencia-41,200,OK,Thread Group 1-1,true,,47693,1,1,643,1,0,INFOS-372
+1597192091392,415,10.3 - Formulario Domicilio Provincia Pais de residencia-42,200,OK,Thread Group 1-1,true,,18854,1,1,366,1,0,INFOS-372
+1597192091810,161,10.4 - Formulario Domicilio Venta Provincia Pais de residencia-43,200,OK,Thread Group 1-1,true,,1568,1,1,157,1,0,INFOS-372
+1597192091977,470,10.5 - Formulario Domicilio Provincia Pais de residencia-44,200,OK,Thread Group 1-1,true,,1297,1,1,466,1,0,INFOS-372
+1597192092455,330,10.6 - Formulario Domicilio Provincia Pais de residencia-45,200,OK,Thread Group 1-1,true,,1048,1,1,329,1,0,INFOS-372
+1597192092788,806,10.7 - Formulario Domicilio Provincia Pais de residencia-46,200,OK,Thread Group 1-1,true,,10975,1,1,804,1,0,INFOS-372
+1597192093597,237,10.8 - Formulario Domicilio Corregimiento Distrito-47,200,OK,Thread Group 1-1,true,,14372,1,1,151,1,0,INFOS-372
+1597192093841,726,10 - Formulario Domicilio Corregimiento Distrito-52,200,OK,Thread Group 1-1,true,,17166,1,1,722,1,0,INFOS-372
+1597192094575,395,10 - Formulario Domicilio Corregimiento Distrito -53,200,OK,Thread Group 1-1,true,,1458,1,1,395,1,0,INFOS-372
+1597192094973,756,10 - Formulario Domicilio Corregimiento Distrito-54,200,OK,Thread Group 1-1,true,,1048,1,1,754,1,0,INFOS-372
+1597192095735,536,10 - Formulario Domicilio Corregimiento Distrito-55,200,OK,Thread Group 1-1,true,,47725,1,1,347,1,0,INFOS-372
+1597192096277,424,10 - Formulario Domicilio Corregimiento Distrito-56,200,OK,Thread Group 1-1,true,,20266,1,1,393,1,0,INFOS-372
+1597192096702,170,10 - Formulario Domicilio Corregimiento Distrito ventana-57,200,OK,Thread Group 1-1,true,,1568,1,1,164,1,0,INFOS-372
+1597192096875,430,10 - Formulario Domicilio Corregimiento Distrito-58,200,OK,Thread Group 1-1,true,,1297,1,1,425,1,0,INFOS-372
+1597192097309,643,10 - Formulario Domicilio Corregimiento Distrito-59,200,OK,Thread Group 1-1,true,,1048,1,1,640,1,0,INFOS-372
+1597192097955,462,10 - Formulario Domicilio Corregimiento Distrito-60,200,OK,Thread Group 1-1,true,,12372,1,1,460,1,0,INFOS-372
+1597192098421,182,10 - Formulario Domicilio Corregimiento Distrito ventana-61,200,OK,Thread Group 1-1,true,,6810,1,1,159,1,0,INFOS-372
+1597192098606,690,10 - Formulario Domicilio Corregimiento Distrito-62,200,OK,Thread Group 1-1,true,,17202,1,1,690,1,0,INFOS-372
+1597192099302,404,10 - Formulario Domicilio Corregimiento Distrito-63,200,OK,Thread Group 1-1,true,,1458,1,1,401,1,0,INFOS-372
+1597192099714,671,10 - Formulario Domicilio Corregimiento Distrito-64,200,OK,Thread Group 1-1,true,,1048,1,1,671,1,0,INFOS-372
+1597192100391,573,10 - Formulario Domicilio Corregimiento Distrito-65,200,OK,Thread Group 1-1,true,,47752,1,1,385,1,0,INFOS-372
+1597192100969,368,10 - Formulario Domicilio Corregimiento Distrito-66,200,OK,Thread Group 1-1,true,,22109,1,1,312,1,0,INFOS-372
+1597192101341,227,10 - Formulario Domicilio Corregimiento Distrito ventana-67,200,OK,Thread Group 1-1,true,,1568,1,1,226,1,0,INFOS-372
+1597192101574,357,10 - Formulario Domicilio Corregimiento Distrito-68,200,OK,Thread Group 1-1,true,,1297,1,1,354,1,0,INFOS-372
+1597192101936,714,10 - Formulario Domicilio Corregimiento Distrito-69,200,OK,Thread Group 1-1,true,,1048,1,1,714,1,0,INFOS-372
+1597192102656,671,10 - Formulario Domicilio Corregimiento Distrito-70,200,OK,Thread Group 1-1,true,,14277,1,1,578,1,0,INFOS-372
+1597192103330,173,10 - Formulario Domicilio Corregimiento Distrito Ventana-71,200,OK,Thread Group 1-1,true,,12348,1,1,148,1,0,INFOS-372
+1597192103511,718,10 - Formulario Domicilio Corregimiento Distrito-72,200,OK,Thread Group 1-1,true,,17258,1,1,714,1,0,INFOS-372
+1597192104236,798,10 - Formulario Domicilio Corregimiento Distrito-73,200,OK,Thread Group 1-1,true,,1458,1,1,798,1,0,INFOS-372
+1597192105039,414,10 - Formulario Domicilio Corregimiento Distrito-74,200,OK,Thread Group 1-1,true,,1048,1,1,411,1,0,INFOS-372
+1597192105459,334,10 - Formulario Domicilio Corregimiento Distrito-75,200,OK,Thread Group 1-1,true,,1073,1,1,329,1,0,INFOS-372
+1597192105795,613,10 - Formulario Domicilio Corregimiento Distrito-76,200,OK,Thread Group 1-1,true,,2073,1,1,612,1,0,INFOS-372
+1597192106410,826,10 - Hacer clic en boton Guardar Domicilio-77,200,OK,Thread Group 1-1,true,,31325,1,1,738,1,0,INFOS-372
+1597192107238,213,10 - Hacer clic en boton Guardar Domicilio-78,200,OK,Thread Group 1-1,true,,4936,1,1,163,1,0,INFOS-372
+1597192106408,1039,10 - Hacer clic en boton Guardar Domicilio,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,true,,36261,1,1,901,1,0,INFOS-372
+1597192089850,17431,10 - Llenar el Formulario Domicilio,200,"Number of samples in transaction : 35, number of failing samples : 0",Thread Group 1-1,true,,402586,1,1,16256,1,0,INFOS-372
+1597192107457,608,11.1 - Hacer clic en Crear Contactos-79,200,OK,Thread Group 1-1,true,,40972,1,1,512,1,0,INFOS-372
+1597192108069,179,11.2 - Hacer clic en Crear Contactos-80,200,OK,Thread Group 1-1,true,,2258,1,1,157,1,0,INFOS-372
+1597192108250,471,11.3 - Hacer clic en Crear Contactos-81,200,OK,Thread Group 1-1,true,,16185,1,1,469,1,0,INFOS-372
+1597192107452,1258,11 - Seleccionar opcion Contactos,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group 1-1,true,,59415,1,1,1138,1,0,INFOS-372
+1597192108727,725,12.1 - Formulario Contactos-82,200,OK,Thread Group 1-1,true,,11529,1,1,723,1,0,INFOS-372
+1597192109459,356,12.2 - Formulario Contactos Correo-83,200,OK,Thread Group 1-1,true,,1072,1,1,356,1,0,INFOS-372
+1597192109817,553,12.3.1 - Formulario Contactos Guardar-84,200,OK,Thread Group 1-1,true,,28801,1,1,456,1,0,INFOS-372
+1597192110374,185,12.3.2 - Formulario Contactos Guardar-85,200,OK,Thread Group 1-1,true,,6760,1,1,153,1,0,INFOS-372
+1597192109816,738,12.3 - Formulario Contactos Guardar,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,true,,35561,1,1,609,1,0,INFOS-372
+1597192108722,1819,12 - Llenar el Formulario de Contactos,200,"Number of samples in transaction : 4, number of failing samples : 0",Thread Group 1-1,true,,48162,1,1,1688,1,0,INFOS-372
+1597192110561,492,13.1 - Seleccionar opcion Relacion-86,200,OK,Thread Group 1-1,true,,40908,1,1,391,1,0,INFOS-372
+1597192111057,510,13.2 - Hacer clic en Crear Relacion-87,200,OK,Thread Group 1-1,true,,2258,1,1,492,1,0,INFOS-372
+1597192111569,604,13.3 - Seleccionar Vinculo Relacion-88,200,OK,Thread Group 1-1,true,,17503,1,1,514,1,0,INFOS-372
+1597192112179,428,13.4.1 - Buscar Identificacion -89,200,OK,Thread Group 1-1,true,,1073,1,1,425,1,0,INFOS-372
+1597192112609,436,13.4.2 - Llenar Formulario Relacion -90,200,OK,Thread Group 1-1,true,,1296,1,1,433,1,0,INFOS-372
+1597192113053,447,13.4.3 - Llenar Formulario Relacion -91,200,OK,Thread Group 1-1,true,,21280,1,1,350,1,0,INFOS-372
+1597192113503,589,13.4.4 - Llenar Formulario Relacion -92,200,OK,Thread Group 1-1,true,,1568,1,1,582,1,0,INFOS-372
+1597192114094,452,13.4.5 - Llenar Formulario Relacion -93,200,OK,Thread Group 1-1,true,,1293,1,1,447,1,0,INFOS-372
+1597192114553,446,13.4.6 - Llenar Formulario Relacion -94,200,OK,Thread Group 1-1,true,,1048,1,1,443,1,0,INFOS-372
+1597192115002,535, 13.4.7 - Llenar Formulario Relacion -95,200,OK,Thread Group 1-1,true,,32351,1,1,438,1,0,INFOS-372
+1597192115542,842, 13.4.8 - Llenar Formulario Relacion -96,200,OK,Thread Group 1-1,true,,20012,1,1,752,1,0,INFOS-372
+1597192116389,516, 13.4.9 - Llenar Formulario Relacion -97,200,OK,Thread Group 1-1,true,,20005,1,1,462,1,0,INFOS-372
+1597192116912,405, 13.4.9 - Llenar Formulario Relacion -98,200,OK,Thread Group 1-1,true,,20005,1,1,353,1,0,INFOS-372
+1597192117320,504, 13.4.10 - Llenar Formulario Relacion -99,200,OK,Thread Group 1-1,true,,20060,1,1,430,1,0,INFOS-372
+1597192117827,734, 13.4.11 - Llenar Formulario Relacion -100,200,OK,Thread Group 1-1,true,,1090,1,1,732,1,0,INFOS-372
+1597192118565,450, 13.4.12 - Llenar Formulario Relacion -101,200,OK,Thread Group 1-1,true,,3636,1,1,448,1,0,INFOS-372
+1597192119021,444, 13.4.13 - Llenar Formulario Relacion Identificacion -102,200,OK,Thread Group 1-1,true,,1458,1,1,444,1,0,INFOS-372
+1597192119471,355, 13.4.14 - Llenar Formulario Relacion -103,200,OK,Thread Group 1-1,true,,1048,1,1,351,1,0,INFOS-372
+1597192112175,7583,13.4 - Formulario Relacion Buscar ,200,"Number of samples in transaction : 15, number of failing samples : 0",Thread Group 1-1,true,,147223,1,1,7090,1,0,INFOS-372
+1597192119829,17640,13.5.1 - Formulario Relacion Guardar-104,200,OK,Thread Group 1-1,true,,1988,1,1,17639,1,0,INFOS-372
+1597192137471,779,13.5.2 - Formulario Relacion Guardar-105,200,OK,Thread Group 1-1,true,,1568,1,1,756,1,0,INFOS-372
+1597192119826,18419,13.5 - Formulario Relacion Guardar,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,true,,3556,1,1,18395,1,0,INFOS-372
+1597192110559,27608,13 - Seleccionar opcion Relacion,200,"Number of samples in transaction : 21, number of failing samples : 0",Thread Group 1-1,true,,211448,1,1,26882,1,0,INFOS-372
+1597192138256,1280,14.1 - Hacer clic en Crear Cuentas Bancarias-106,200,OK,Thread Group 1-1,true,,29830,1,1,1091,1,0,INFOS-372
+1597192139537,538,14.2 - Hacer clic en Crear Cuentas Bancarias-107,200,OK,Thread Group 1-1,true,,1568,1,1,527,1,0,INFOS-372
+1597192140078,439,14.3 - Hacer clic en Crear Cuentas Bancarias-108,200,OK,Thread Group 1-1,true,,1066,1,1,437,1,0,INFOS-372
+1597192140521,427,14.4.1 - Formulario Cuentas Bancarias-109,200,OK,Thread Group 1-1,true,,1066,1,1,427,1,0,INFOS-372
+1597192140950,373,14.4.2 - Formulario Cuentas Bancarias-110,200,OK,Thread Group 1-1,true,,1037,1,1,373,1,0,INFOS-372
+1597192141324,290,14.4.3 - Formulario Cuentas Bancarias-111,200,OK,Thread Group 1-1,true,,1568,1,1,283,1,0,INFOS-372
+1597192141616,704,14.4.4 - Formulario Cuentas Bancarias-112,200,OK,Thread Group 1-1,true,,1037,1,1,700,1,0,INFOS-372
+1597192142322,410,14.4.5 - Formulario Cuentas Bancarias-113,200,OK,Thread Group 1-1,true,,1037,1,1,408,1,0,INFOS-372
+1597192142739,445,14.4.6 - Formulario Cuentas Bancarias-114,200,OK,Thread Group 1-1,true,,1066,1,1,443,1,0,INFOS-372
+1597192143188,232,14.4.7 - Formulario Cuentas Bancarias-115,200,OK,Thread Group 1-1,true,,1568,1,1,221,1,0,INFOS-372
+1597192143423,438,14.4.8 - Formulario Cuentas Bancarias-116,200,OK,Thread Group 1-1,true,,1066,1,1,435,1,0,INFOS-372
+1597192143870,765,14.4.9 - Formulario Cuentas Bancarias-117,200,OK,Thread Group 1-1,true,,1066,1,1,764,1,0,INFOS-372
+1597192144641,379,14.4.10 - Formulario Cuentas Bancarias-118,200,OK,Thread Group 1-1,true,,1066,1,1,379,1,0,INFOS-372
+1597192145023,440,14.4.11 - Formulario Cuentas Bancarias-119,200,OK,Thread Group 1-1,true,,1037,1,1,436,1,0,INFOS-372
+1597192145470,470,14.4.12 - Formulario Cuentas Bancarias-120,200,OK,Thread Group 1-1,true,,1066,1,1,467,1,0,INFOS-372
+1597192145947,808,14.4.13 - Formulario Cuentas Bancarias-121,200,OK,Thread Group 1-1,true,,1037,1,1,807,1,0,INFOS-372
+1597192146757,220,14.4.14 - Formulario Cuentas Bancarias-122,200,OK,Thread Group 1-1,true,,1568,1,1,213,1,0,INFOS-372
+1597192146983,449,14.4.15 - Formulario Cuentas Bancarias-123,200,OK,Thread Group 1-1,true,,1037,1,1,445,1,0,INFOS-372
+1597192147439,364,14.4.16- Formulario Cuentas Bancarias-124,200,OK,Thread Group 1-1,true,,1037,1,1,359,1,0,INFOS-372
+1597192147806,420,14.4.17 - Formulario Cuentas Bancarias-125,200,OK,Thread Group 1-1,true,,1066,1,1,414,1,0,INFOS-372
+1597192148230,544,14.4.18 - Formulario Cuentas Bancarias-126,200,OK,Thread Group 1-1,true,,1568,1,1,532,1,0,INFOS-372
+1597192148780,445,14.4.19 - Formulario Cuentas Bancarias-127,200,OK,Thread Group 1-1,true,,1066,1,1,443,1,0,INFOS-372
+1597192149231,409,14.4.20 - Formulario Cuentas Bancarias-128,200,OK,Thread Group 1-1,true,,1066,1,1,400,1,0,INFOS-372
+1597192149645,435,14.4.21 - Formulario Cuentas Bancarias-129,200,OK,Thread Group 1-1,true,,1066,1,1,435,1,0,INFOS-372
+1597192150082,380,14.4.22 - Formulario Cuentas Bancarias-130,200,OK,Thread Group 1-1,true,,1037,1,1,378,1,0,INFOS-372
+1597192150468,803,14.4.23.1 - Cunenta Bancaria Principal-131,200,OK,Thread Group 1-1,true,,1066,1,1,801,1,0,INFOS-372
+1597192150463,803,14.4.23 - Cunenta Bancaria Principal,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,true,,1066,1,1,801,1,0,INFOS-372
+1597192151277,447,14.4.24.1 - Segunda Cuenta Bancaria-132,200,OK,Thread Group 1-1,true,,1066,1,1,447,1,0,INFOS-372
+1597192151271,447,14.4.24 - Segunda Cuenta Bancaria,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,true,,1066,1,1,447,1,0,INFOS-372
+1597192151726,408,14.4.25.1 - Tercera Cuenta Bancaria,200,OK,Thread Group 1-1,true,,1066,1,1,407,1,0,INFOS-372
+1597192151725,408,14.4.25 - Tercera Cuenta Bancaria,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,true,,1066,1,1,407,1,0,INFOS-372
+1597192140518,11505,14.4 - Llenar el Formulario de Cuentas Bancarias,200,"Number of samples in transaction : 27, number of failing samples : 0",Thread Group 1-1,true,,28426,1,1,11417,1,0,INFOS-372
+1597192152136,361,14.5.1 - Guardar Cuentas Bancarias-134,200,OK,Thread Group 1-1,true,,1066,1,1,360,1,0,INFOS-372
+1597192152500,639,14.5.2 - Guardar Cuentas Bancarias-135,200,OK,Thread Group 1-1,true,,1568,1,1,627,1,0,INFOS-372
+1597192152134,1000,14.5 - Guardar Cuentas Bancarias,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,true,,2634,1,1,987,1,0,INFOS-372
+1597192138252,14762,14 - Seleccionar opcion Cuentas Bancarias ,200,"Number of samples in transaction : 31, number of failing samples : 0",Thread Group 1-1,true,,63524,1,1,14459,1,0,INFOS-372
+1597192153144,481,15.1 - Seleccionar la opcion Campos Adicionales-136,200,OK,Thread Group 1-1,true,,29830,1,1,316,1,0,INFOS-372
+1597192153629,219,15.2 - Hacer clic en la opcion Campos Adicionales-137,200,OK,Thread Group 1-1,true,,1568,1,1,205,1,0,INFOS-372
+1597192153850,424,15.3.1 - Formulario Campos Adicionales-138,200,OK,Thread Group 1-1,true,,1066,1,1,424,1,0,INFOS-372
+1597192154280,371,15.3.2 -  Formulario Campos Adicionales-139,200,OK,Thread Group 1-1,true,,1037,1,1,371,1,0,INFOS-372
+1597192154654,628,15.3.3 -  Formulario Campos Adicionales-140,200,OK,Thread Group 1-1,true,,1568,1,1,622,1,0,INFOS-372
+1597192155287,386,15.3.4 -  Formulario Campos Adicionales-141,200,OK,Thread Group 1-1,true,,1037,1,1,381,1,0,INFOS-372
+1597192155678,443,15.3.5 - Formulario Campos Adicionales-142,200,OK,Thread Group 1-1,true,,1066,1,1,443,1,0,INFOS-372
+1597192156124,458,15.3.6 - Formulario Campos Adicionales-143,200,OK,Thread Group 1-1,true,,1066,1,1,454,1,0,INFOS-372
+1597192156584,446,15.3.7 - Formulario Campos Adicionales-144,200,OK,Thread Group 1-1,true,,1066,1,1,445,1,0,INFOS-372
+1597192157032,774,15.3.8 - Formulario Campos Adicionales-145,200,OK,Thread Group 1-1,true,,1066,1,1,770,1,0,INFOS-372
+1597192157810,403,15.3.9 - Formulario Campos Adicionales-146,200,OK,Thread Group 1-1,true,,1066,1,1,400,1,0,INFOS-372
+1597192158216,449,15.3.10 - Formulario Campos Adicionales-147,200,OK,Thread Group 1-1,true,,1066,1,1,446,1,0,INFOS-372
+1597192158670,566,15.3.11 - Formulario Campos Adicionales-148,200,OK,Thread Group 1-1,true,,1066,1,1,566,1,0,INFOS-372
+1597192159241,891,15.3.12 - Formulario campo Nombre de la Empresa y Nacionalidad-149,200,OK,Thread Group 1-1,true,,1066,1,1,888,1,0,INFOS-372
+1597192160139,600,15.3.14 - Formulario Campos Adicionales-151,200,OK,Thread Group 1-1,true,,1066,1,1,598,1,0,INFOS-372
+1597192160744,580,15.3.13 - Formulario Campo Cargo que Ocupa-150,200,OK,Thread Group 1-1,true,,1066,1,1,576,1,0,INFOS-372
+1597192161326,857,15.3.15 - Formulario Campo Perfil PYMES-152,200,OK,Thread Group 1-1,true,,1066,1,1,854,1,0,INFOS-372
+1597192162188,689,15.3.16 - Formulario Tipo de PYMES-153,200,OK,Thread Group 1-1,true,,1066,1,1,686,1,0,INFOS-372
+1597192162882,634,15.3.18 - Formulario Campo Exoneracion de impuesto-154,200,OK,Thread Group 1-1,true,,1066,1,1,630,1,0,INFOS-372
+1597192163522,901,15.3.19- Formulario Campo Ingresos Anuales-155,200,OK,Thread Group 1-1,true,,1066,1,1,894,1,0,INFOS-372
+1597192164425,509,15.3.20 - Formulario Campos Adicionales Actividad Principal-156,200,OK,Thread Group 1-1,true,,1066,1,1,504,1,0,INFOS-372
+1597192164939,468,15.3.21 - Formulario Campos Adicionales por otras Actividad-157,200,OK,Thread Group 1-1,true,,1066,1,1,466,1,0,INFOS-372
+1597192165412,403,15.3.22 - Formulario Campos Adicionales-158,200,OK,Thread Group 1-1,true,,1066,1,1,400,1,0,INFOS-372
+1597192165821,838,15.3.23 - Formulario Campo Accionista-159,200,OK,Thread Group 1-1,true,,1066,1,1,834,1,0,INFOS-372
+1597192166665,418,15.3.24 - Formulario Campo Porcentaje de participacion-160,200,OK,Thread Group 1-1,true,,1066,1,1,416,1,0,INFOS-372
+1597192167086,466,15.3.25 - Formulario Campos Adicionales-161,200,OK,Thread Group 1-1,true,,1066,1,1,465,1,0,INFOS-372
+1597192167554,455,15.3.26 - Formulario Campos Adicionales-162,200,OK,Thread Group 1-1,true,,1066,1,1,454,1,0,INFOS-372
+1597192168014,788,15.3.27 - Formulario Campos Adicionales-163,200,OK,Thread Group 1-1,true,,1066,1,1,784,1,0,INFOS-372
+1597192168809,690,15.3.28 - Formulario Campos Adicionales-164,200,OK,Thread Group 1-1,true,,1066,1,1,690,1,0,INFOS-372
+1597192169501,496,15.3.29 - Formulario Campos Adicionales-165,200,OK,Thread Group 1-1,true,,1066,1,1,493,1,0,INFOS-372
+1597192153849,16031,15.3 - Llenar Formulario Campos Adicionales,200,"Number of samples in transaction : 28, number of failing samples : 0",Thread Group 1-1,true,,30292,1,1,15954,1,0,INFOS-372
+1597192170002,485,15.4.1 - Formulario Campos Adicionales Grabar-166,200,OK,Thread Group 1-1,true,,1066,1,1,482,1,0,INFOS-372
+1597192170490,552,15.4.2 - Formulario Campos Adicionales Grabar-167,200,OK,Thread Group 1-1,true,,1568,1,1,539,1,0,INFOS-372
+1597192171045,451,15.4.3 - Formulario Campos Adicionales Grabar-168,200,OK,Thread Group 1-1,true,,1037,1,1,448,1,0,INFOS-372
+1597192169997,1488,15.4 - Formulario Campos Adicionales Grabar,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group 1-1,true,,3671,1,1,1469,1,0,INFOS-372
+1597192171499,438,15.5.1 - Formulario Campos Adicionales Cerrar-169,200,OK,Thread Group 1-1,true,,1066,1,1,438,1,0,INFOS-372
+1597192171941,372,15.5.2 - Formulario Campos Adicionales Cerrar-170,200,OK,Thread Group 1-1,true,,1066,1,1,369,1,0,INFOS-372
+1597192172316,297,15.5.3 - Formulario Campos Adicionales Cerrar-171,200,OK,Thread Group 1-1,true,,1568,1,1,282,1,0,INFOS-372
+1597192172620,701,15.5.4 - Formulario Campos Adicionales Cerrar-172,200,OK,Thread Group 1-1,true,,1037,1,1,701,1,0,INFOS-372
+1597192171497,1808,15.5 - Formulario Campos Adicionales Cerrar,200,"Number of samples in transaction : 4, number of failing samples : 0",Thread Group 1-1,true,,4737,1,1,1790,1,0,INFOS-372
+1597192153140,20027,15 - Seleccionar la opcion Campos Adicionales,200,"Number of samples in transaction : 39, number of failing samples : 0",Thread Group 1-1,true,,70098,1,1,19734,1,0,INFOS-372
+1597192173326,656,16.1 - Presionar el boton Grabar Persona-173,200,OK,Thread Group 1-1,false,Test failed: text expected not to contain /Este PID ya existe/,121587,1,1,375,1,1,INFOS-372
+1597192173988,215,16.2 - Presionar el boton Grabar Persona-174,200,OK,Thread Group 1-1,true,,1568,1,1,205,1,0,INFOS-372
+1597192173322,871,16 - Presionar el boton Grabar Persona,,"Number of samples in transaction : 2, number of failing samples : 1",Thread Group 1-1,false,,123155,1,1,580,1,1,INFOS-372
+1597192174209,587,17.1 - Presionar el boton Cerrar  Persona-175,200,OK,Thread Group 1-1,true,,121251,1,1,474,1,0,INFOS-372
+1597192174799,828,17.2 - Presionar el boton Cerrar  Persona--176,200,OK,Thread Group 1-1,true,,76997,1,1,657,1,0,INFOS-372
+1597192175629,121,17.3 - Presionar el boton Cerrar  Persona-,200,OK,Thread Group 1-1,true,,2228,1,1,113,1,0,INFOS-372
+1597192175751,176,17.4 - Presionar el boton Cerrar  Persona--178,200,OK,Thread Group 1-1,true,,1023,1,1,175,1,0,INFOS-372
+1597192174204,1712,17 - Presionar el boton Cerrar  Persona,200,"Number of samples in transaction : 4, number of failing samples : 0",Thread Group 1-1,true,,201499,1,1,1419,1,0,INFOS-372
+1597192175929,419,18.1 - Presionar el boton Cerrar  Insis-182,200,OK,Thread Group 1-1,true,,10338,1,1,211,1,0,INFOS-372
+1597192176350,188,18.2 - Presionar el boton Cerrar  Insis-183,200,OK,Thread Group 1-1,true,,8979,1,1,95,1,0,INFOS-372
+1597192176540,217,18.4 - Presionar el boton Cerrar  Insis-185,200,OK,Thread Group 1-1,true,,17563,1,1,103,1,0,INFOS-372
+1597192175927,824,18 - Presionar el boton Cerrar  Insis,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group 1-1,true,,36880,1,1,409,1,0,INFOS-372
+1597192071885,104114,Transaction Controller,,"Number of samples in transaction : 192, number of failing samples : 4",Thread Group 1-1,false,,2090490,1,1,96978,1,1,INFOS-372
+1597192176764,3,Debug Sampler,200,OK,Thread Group 1-1,true,,833,1,1,0,1,0,INFOS-372

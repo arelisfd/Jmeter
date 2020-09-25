@@ -1,0 +1,28 @@
+jmeter -n -t C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Flujo-Integrado-V4.jmx
+
+jmeter -g C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\RegistroCliente1.csv -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLRegistroCliente1
+
+jmeter -g C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Cotizacion2.csv -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLCotizacion2
+
+jmeter -g C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\EmisionPago3.csv -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLEmisionPago3
+
+jmeter -g C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\Devolucion4.csv -o C:\Jmeter\apache-jmeter-5.2.1\bin\templates\Test-SURA\Script-Probar-PRE_PRO\Integracion\ReporteHTML\HTMLDevolucion4
+
+
+
+
+*--------------------------------------------
+
+
+
+jmeter -n -t C:\SURA_PTEST\UAT\3-Unificados\Unificado-Test-2\Flujo-Integrado-V2.jmx
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado-Test-2\RegistroCliente1.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado-Test-2\HTMLRegistroCliente1
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado-Test-2\Cotizacion2.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado-Test-2\HTMLCotizacion2
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado-Test-2\Cancelacion6.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado-Test-2\HTMLCancelacion6
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado-Test-2\Devolucion4.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado-Test-2\HTMLDevolucion4
+
+

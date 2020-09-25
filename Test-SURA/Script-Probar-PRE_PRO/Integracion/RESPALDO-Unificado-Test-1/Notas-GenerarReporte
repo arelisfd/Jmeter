@@ -1,0 +1,17 @@
+*--------------------------------------------
+
+
+
+jmeter -n -t C:\SURA_PTEST\UAT\3-Unificados\Unificado\Flujo-Integrado.jmx
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\1-RegistroCliente.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\1-HTMLRegistroCliente
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\2-Cotizacion.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\2-HTMLCotizacion
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\3-Devolucion.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\3-HTMLCreacionPagoPoliza
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\6-Cancelacion.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\6-HTMLCancelacion
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\8-Devolucion.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\8-HTMLDevolucion
+
+

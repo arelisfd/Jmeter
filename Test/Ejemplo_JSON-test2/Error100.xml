@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="4653" it="0" lt="4653" ct="0" ts="1595028188882" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-2" dt="text" by="781" sby="630" ng="8" na="8">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/TORRES/AENM3W/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 67
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;18E&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENM3W/assign</java.net.URL>
+</httpSample>
+<sample t="4653" it="8" lt="4653" ct="0" ts="1595028188882" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-2" dt="" by="781" sby="630" ng="8" na="8">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="15402" it="0" lt="15402" ct="0" ts="1595028182330" s="false" lb="9A.14 - GetValidMethods" rc="500" rm="Internal Server Error" tn="MyTrips 1-1" dt="text" by="831" sby="489" ng="8" na="8">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Currency: USD
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;Error during processing Request timeout to s-api-uat.copa.com/204.93.139.168:443 after 7000 ms&quot;,&quot;code&quot;:0}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://api-uat.copaair.com/payments/payment/valid-methods/AENYB3</java.net.URL>
+</httpSample>
+<sample t="16138" it="1" lt="16138" ct="0" ts="1595028181593" s="false" lb="9A.1 - Clic Pagar Extras" rc="" rm="Number of samples in transaction : 4, number of failing samples : 1" tn="MyTrips 1-1" dt="" by="8604" sby="1876" ng="8" na="8">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="6425" it="0" lt="6425" ct="77" ts="1595028261141" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-2" dt="text" by="746" sby="2739" ng="12" na="12">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2190
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENM3W&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;18E&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="6425" it="60002" lt="6425" ct="77" ts="1595028201135" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-2" dt="" by="746" sby="2739" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="4884" it="0" lt="4884" ct="0" ts="1595028282611" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-7" dt="text" by="781" sby="628" ng="13" na="13">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/RIVAS/AENLH4/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;5E&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENLH4/assign</java.net.URL>
+</httpSample>
+<sample t="4884" it="1" lt="4884" ct="0" ts="1595028282611" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-7" dt="" by="781" sby="628" ng="13" na="13">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="3500" it="0" lt="3500" ct="0" ts="1595028333978" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-10" dt="text" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/TUSUSU/AENL45/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;7F&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENL45/assign</java.net.URL>
+</httpSample>
+<sample t="3500" it="1" lt="3500" ct="0" ts="1595028333977" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-10" dt="" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="6471" it="0" lt="6471" ct="77" ts="1595028352512" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-7" dt="text" by="746" sby="2738" ng="12" na="12">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENLH4&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;5E&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="6471" it="60000" lt="6471" ct="77" ts="1595028292505" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-7" dt="" by="746" sby="2738" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="8192" it="0" lt="8192" ct="77" ts="1595028404495" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-10" dt="text" by="746" sby="2738" ng="12" na="12">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENL45&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;7F&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="8192" it="59999" lt="8192" ct="77" ts="1595028344490" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-10" dt="" by="746" sby="2738" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="854" it="0" lt="854" ct="0" ts="1595028461496" s="false" lb="2.2 - BaggageAllowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-22" dt="text" by="686" sby="414" ng="11" na="11">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: http://mytrips-uat.copaair.com
+Host: api-uat.copaair.com
+Content-Type:  application/json
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Accept-Language: es-PA
+Content-Length: 78
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;ABELINO&quot;,&quot;lastName&quot;:&quot;BONILLA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1HN</java.net.URL>
+</httpSample>
+<sample t="3260" it="10005" lt="3260" ct="451" ts="1595028449710" s="false" lb="2 - Buscar Reserva" rc="" rm="Number of samples in transaction : 3, number of failing samples : 1" tn="MyTrips 1-22" dt="" by="4978" sby="1106" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5010" it="0" lt="5010" ct="0" ts="1595028528741" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-21" dt="text" by="781" sby="629" ng="9" na="9">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/VARELA/AENM0Z/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;9D&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENM0Z/assign</java.net.URL>
+</httpSample>
+<sample t="5010" it="1" lt="5010" ct="0" ts="1595028528741" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-21" dt="" by="781" sby="629" ng="9" na="9">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="920" it="0" lt="920" ct="0" ts="1595028553459" s="false" lb="8.3 - BaggageAllowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-22" dt="text" by="686" sby="414" ng="10" na="10">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: http://mytrips-uat.copaair.com
+Host: api-uat.copaair.com
+Content-Type:  application/json
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Accept-Language: es-PA
+Content-Length: 78
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;ABELINO&quot;,&quot;lastName&quot;:&quot;BONILLA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1HN</java.net.URL>
+</httpSample>
+<sample t="2653" it="1" lt="2653" ct="0" ts="1595028552210" s="false" lb="8 - Finalizar Seleccion" rc="" rm="Number of samples in transaction : 3, number of failing samples : 1" tn="MyTrips 1-22" dt="" by="5694" sby="1200" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5334" it="0" lt="5334" ct="81" ts="1595028598167" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-21" dt="text" by="746" sby="2738" ng="10" na="10">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENM0Z&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;9D&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="5334" it="60000" lt="5334" ct="81" ts="1595028538160" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-21" dt="" by="746" sby="2738" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="970" it="0" lt="970" ct="0" ts="1595028639703" s="false" lb="11.3 - Baggage Allowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-22" dt="text" by="788" sby="699" ng="10" na="10">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-PA
+Connection: keep-alive
+Content-Type: application/json
+Host: api-uat.copaair.com
+Origin: https://mytrips-uat.copaair.com
+Referer: https://mytrips-uat.copaair.com/trip-detail/AEN1HN/BONILLA
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 78
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;ABELINO&quot;,&quot;lastName&quot;:&quot;BONILLA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1HN</java.net.URL>
+</httpSample>
+<sample t="6320" it="1" lt="6320" ct="0" ts="1595028636431" s="false" lb="11 - Add New Trip" rc="" rm="Number of samples in transaction : 5, number of failing samples : 1" tn="MyTrips 1-22" dt="" by="8734" sby="3039" ng="11" na="11">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="7088" it="0" lt="7088" ct="0" ts="1595028640193" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-27" dt="text" by="781" sby="628" ng="11" na="11">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/CANO/AENMCP/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 67
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;10F&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENMCP/assign</java.net.URL>
+</httpSample>
+<sample t="7088" it="1" lt="7088" ct="0" ts="1595028640193" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-27" dt="" by="781" sby="628" ng="11" na="11">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="950" it="0" lt="950" ct="0" ts="1595028659883" s="false" lb="8.3 - BaggageAllowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-28" dt="text" by="686" sby="411" ng="11" na="11">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: http://mytrips-uat.copaair.com
+Host: api-uat.copaair.com
+Content-Type:  application/json
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Accept-Language: es-PA
+Content-Length: 75
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;JULIO&quot;,&quot;lastName&quot;:&quot;GARCIA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1FL</java.net.URL>
+</httpSample>
+<sample t="2487" it="0" lt="2487" ct="0" ts="1595028658824" s="false" lb="8 - Finalizar Seleccion" rc="" rm="Number of samples in transaction : 3, number of failing samples : 1" tn="MyTrips 1-28" dt="" by="5687" sby="1196" ng="11" na="11">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5344" it="0" lt="5344" ct="76" ts="1595028712881" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-27" dt="text" by="746" sby="2739" ng="12" na="12">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2190
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENMCP&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;10F&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="5344" it="60000" lt="5344" ct="76" ts="1595028652874" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-27" dt="" by="746" sby="2739" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="1000" it="0" lt="1000" ct="0" ts="1595028751071" s="false" lb="11.3 - Baggage Allowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-28" dt="text" by="788" sby="695" ng="11" na="11">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-PA
+Connection: keep-alive
+Content-Type: application/json
+Host: api-uat.copaair.com
+Origin: https://mytrips-uat.copaair.com
+Referer: https://mytrips-uat.copaair.com/trip-detail/AEN1FL/GARCIA
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 75
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;JULIO&quot;,&quot;lastName&quot;:&quot;GARCIA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1FL</java.net.URL>
+</httpSample>
+<sample t="5792" it="2" lt="5792" ct="0" ts="1595028748156" s="false" lb="11 - Add New Trip" rc="" rm="Number of samples in transaction : 5, number of failing samples : 1" tn="MyTrips 1-28" dt="" by="8716" sby="3031" ng="11" na="11">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="4317" it="0" lt="4317" ct="0" ts="1595029070249" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-51" dt="text" by="781" sby="631" ng="10" na="10">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/IGLESIAS/AENM0J/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;9A&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENM0J/assign</java.net.URL>
+</httpSample>
+<sample t="4317" it="2" lt="4317" ct="0" ts="1595029070248" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-51" dt="" by="781" sby="631" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5564" it="0" lt="5564" ct="80" ts="1595029141064" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-51" dt="text" by="746" sby="2738" ng="10" na="10">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENM0J&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;9A&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="5564" it="60000" lt="5564" ct="80" ts="1595029081057" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-51" dt="" by="746" sby="2738" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="3356" it="0" lt="3356" ct="0" ts="1595029162852" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-56" dt="text" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/CORRUP/AENLIH/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;6C&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENLIH/assign</java.net.URL>
+</httpSample>
+<sample t="3356" it="0" lt="3356" ct="0" ts="1595029162852" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-56" dt="" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="893" it="0" lt="893" ct="0" ts="1595029216828" s="false" lb="2.2 - BaggageAllowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-64" dt="text" by="686" sby="413" ng="11" na="11">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: http://mytrips-uat.copaair.com
+Host: api-uat.copaair.com
+Content-Type:  application/json
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Accept-Language: es-PA
+Content-Length: 77
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;PATRICIA&quot;,&quot;lastName&quot;:&quot;PARRA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1EC</java.net.URL>
+</httpSample>
+<sample t="2849" it="10003" lt="2849" ct="445" ts="1595029205340" s="false" lb="2 - Buscar Reserva" rc="" rm="Number of samples in transaction : 3, number of failing samples : 1" tn="MyTrips 1-64" dt="" by="4975" sby="1103" ng="11" na="11">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="6773" it="0" lt="6773" ct="80" ts="1595029231153" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-56" dt="text" by="746" sby="2738" ng="12" na="12">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENLIH&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;6C&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="6773" it="59999" lt="6773" ct="80" ts="1595029171148" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-56" dt="" by="746" sby="2738" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="7412" it="0" lt="7411" ct="0" ts="1595029270076" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-62" dt="text" by="781" sby="630" ng="10" na="10">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/NAVARRO/AENKUX/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;8D&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENKUX/assign</java.net.URL>
+</httpSample>
+<sample t="7412" it="0" lt="7411" ct="0" ts="1595029270076" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-62" dt="" by="781" sby="630" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="4421" it="0" lt="4421" ct="0" ts="1595029285827" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-63" dt="text" by="781" sby="631" ng="9" na="9">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/AGUILAR/AENM2M/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 67
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;17C&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENM2M/assign</java.net.URL>
+</httpSample>
+<sample t="4421" it="3" lt="4421" ct="0" ts="1595029285827" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-63" dt="" by="781" sby="631" ng="9" na="9">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="860" it="0" lt="860" ct="0" ts="1595029308092" s="false" lb="8.3 - BaggageAllowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-64" dt="text" by="686" sby="413" ng="11" na="11">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: http://mytrips-uat.copaair.com
+Host: api-uat.copaair.com
+Content-Type:  application/json
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Accept-Language: es-PA
+Content-Length: 77
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;PATRICIA&quot;,&quot;lastName&quot;:&quot;PARRA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1EC</java.net.URL>
+</httpSample>
+<sample t="2095" it="0" lt="2095" ct="0" ts="1595029307299" s="false" lb="8 - Finalizar Seleccion" rc="" rm="Number of samples in transaction : 3, number of failing samples : 1" tn="MyTrips 1-64" dt="" by="5690" sby="1197" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="8327" it="0" lt="8327" ct="0" ts="1595029320958" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-65" dt="text" by="781" sby="628" ng="11" na="11">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/REEL/AENM1Y/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 67
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;10E&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENM1Y/assign</java.net.URL>
+</httpSample>
+<sample t="8327" it="1" lt="8327" ct="0" ts="1595029320958" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-65" dt="" by="781" sby="628" ng="11" na="11">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5974" it="0" lt="5974" ct="80" ts="1595029344714" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-62" dt="text" by="746" sby="2738" ng="12" na="12">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENKUX&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;8D&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="5974" it="59999" lt="5974" ct="80" ts="1595029284707" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-62" dt="" by="746" sby="2738" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="8062" it="0" lt="8062" ct="81" ts="1595029355436" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-63" dt="text" by="746" sby="2739" ng="12" na="12">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2190
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENM2M&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;17C&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="8062" it="59999" lt="8062" ct="81" ts="1595029295429" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-63" dt="" by="746" sby="2739" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="831" it="0" lt="831" ct="0" ts="1595029393650" s="false" lb="11.3 - Baggage Allowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-64" dt="text" by="788" sby="696" ng="11" na="11">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-PA
+Connection: keep-alive
+Content-Type: application/json
+Host: api-uat.copaair.com
+Origin: https://mytrips-uat.copaair.com
+Referer: https://mytrips-uat.copaair.com/trip-detail/AEN1EC/PARRA
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 77
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;PATRICIA&quot;,&quot;lastName&quot;:&quot;PARRA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1EC</java.net.URL>
+</httpSample>
+<sample t="5778" it="3" lt="5778" ct="0" ts="1595029390439" s="false" lb="11 - Add New Trip" rc="" rm="Number of samples in transaction : 5, number of failing samples : 1" tn="MyTrips 1-64" dt="" by="8731" sby="3028" ng="11" na="11">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="12071" it="0" lt="12071" ct="75" ts="1595029394449" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-65" dt="text" by="746" sby="2739" ng="12" na="12">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2190
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENM1Y&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;10E&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="12071" it="60000" lt="12071" ct="75" ts="1595029334442" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-65" dt="" by="746" sby="2739" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="3626" it="0" lt="3626" ct="0" ts="1595029415741" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-70" dt="text" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/VARELA/AENMX0/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;6C&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENMX0/assign</java.net.URL>
+</httpSample>
+<sample t="3626" it="1" lt="3626" ct="0" ts="1595029415741" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-70" dt="" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5350" it="0" lt="5350" ct="0" ts="1595029448780" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-72" dt="text" by="781" sby="628" ng="12" na="12">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/QUILO/AENMXV/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;6B&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENMXV/assign</java.net.URL>
+</httpSample>
+<sample t="5350" it="1" lt="5350" ct="0" ts="1595029448780" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-72" dt="" by="781" sby="628" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5091" it="0" lt="5091" ct="0" ts="1595029465108" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-73" dt="text" by="781" sby="628" ng="12" na="12">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/SOTO/AENMD0/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 67
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;18A&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENMD0/assign</java.net.URL>
+</httpSample>
+<sample t="5091" it="2" lt="5091" ct="0" ts="1595029465108" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-73" dt="" by="781" sby="628" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5963" it="0" lt="5963" ct="79" ts="1595029486496" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-70" dt="text" by="746" sby="2738" ng="13" na="13">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENMX0&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;6C&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="5963" it="60000" lt="5963" ct="79" ts="1595029426489" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-70" dt="" by="746" sby="2738" ng="13" na="13">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="8203" it="0" lt="8203" ct="76" ts="1595029520930" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-72" dt="text" by="746" sby="2738" ng="12" na="12">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENMXV&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;6B&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="8203" it="60000" lt="8203" ct="76" ts="1595029460923" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-72" dt="" by="746" sby="2738" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5985" it="0" lt="5984" ct="0" ts="1595029523277" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-76" dt="text" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/URIBE/AENKXA/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 67
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;17F&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENKXA/assign</java.net.URL>
+</httpSample>
+<sample t="5985" it="0" lt="5984" ct="0" ts="1595029523277" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-76" dt="" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="6479" it="0" lt="6479" ct="75" ts="1595029535454" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-73" dt="text" by="746" sby="2739" ng="12" na="12">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2190
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENMD0&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;18A&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="6479" it="59999" lt="6479" ct="75" ts="1595029475447" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-73" dt="" by="746" sby="2739" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="7060" it="0" lt="7060" ct="80" ts="1595029596772" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-76" dt="text" by="746" sby="2739" ng="11" na="11">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2190
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENKXA&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;17F&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="7060" it="59999" lt="7060" ct="80" ts="1595029536765" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-76" dt="" by="746" sby="2739" ng="11" na="11">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="3674" it="0" lt="3674" ct="0" ts="1595029609877" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-81" dt="text" by="781" sby="629" ng="11" na="11">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/GARCIA/AENLIC/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;6B&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENLIC/assign</java.net.URL>
+</httpSample>
+<sample t="3674" it="0" lt="3674" ct="0" ts="1595029609877" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-81" dt="" by="781" sby="629" ng="11" na="11">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="3381" it="0" lt="3381" ct="0" ts="1595029626729" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-82" dt="text" by="781" sby="630" ng="10" na="10">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/BRACHO/AENLNU/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 67
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;17F&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENLNU/assign</java.net.URL>
+</httpSample>
+<sample t="3381" it="1" lt="3381" ct="0" ts="1595029626729" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-82" dt="" by="781" sby="630" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="6424" it="0" lt="6424" ct="75" ts="1595029679234" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-81" dt="text" by="746" sby="2738" ng="10" na="10">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENLIC&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;6B&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="6424" it="60000" lt="6424" ct="75" ts="1595029619227" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-81" dt="" by="746" sby="2738" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="7701" it="0" lt="7701" ct="95" ts="1595029694909" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-82" dt="text" by="746" sby="2739" ng="10" na="10">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2190
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENLNU&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;17F&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="7701" it="59999" lt="7701" ct="95" ts="1595029634904" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-82" dt="" by="746" sby="2739" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5714" it="0" lt="5714" ct="0" ts="1595029790308" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-91" dt="text" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/TORRES/AENL31/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;6E&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENL31/assign</java.net.URL>
+</httpSample>
+<sample t="5714" it="1" lt="5714" ct="0" ts="1595029790308" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-91" dt="" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="771" it="0" lt="771" ct="0" ts="1595029828910" s="false" lb="2.2 - BaggageAllowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-98" dt="text" by="686" sby="414" ng="11" na="11">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: http://mytrips-uat.copaair.com
+Host: api-uat.copaair.com
+Content-Type:  application/json
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Accept-Language: es-PA
+Content-Length: 78
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;ABELINO&quot;,&quot;lastName&quot;:&quot;BONILLA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1LM</java.net.URL>
+</httpSample>
+<sample t="2766" it="10005" lt="2766" ct="437" ts="1595029817363" s="false" lb="2 - Buscar Reserva" rc="" rm="Number of samples in transaction : 3, number of failing samples : 1" tn="MyTrips 1-98" dt="" by="4978" sby="1106" ng="11" na="11">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5921" it="0" lt="5921" ct="0" ts="1595029825203" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-93" dt="text" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/RIVERA/AENL3L/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;5E&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENL3L/assign</java.net.URL>
+</httpSample>
+<sample t="5921" it="0" lt="5921" ct="0" ts="1595029825203" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-93" dt="" by="781" sby="629" ng="12" na="12">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="879" it="0" lt="879" ct="0" ts="1595029864655" s="false" lb="2.2 - BaggageAllowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-100" dt="text" by="686" sby="413" ng="10" na="10">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: http://mytrips-uat.copaair.com
+Host: api-uat.copaair.com
+Content-Type:  application/json
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Accept-Language: es-PA
+Content-Length: 77
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;ANTONIO&quot;,&quot;lastName&quot;:&quot;WALTER&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1LQ</java.net.URL>
+</httpSample>
+<sample t="2757" it="10001" lt="2757" ct="438" ts="1595029853256" s="false" lb="2 - Buscar Reserva" rc="" rm="Number of samples in transaction : 3, number of failing samples : 1" tn="MyTrips 1-100" dt="" by="4976" sby="1104" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="4748" it="0" lt="4748" ct="80" ts="1595029864807" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-91" dt="text" by="746" sby="2738" ng="10" na="10">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENL31&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;6E&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="4748" it="59998" lt="4748" ct="80" ts="1595029804802" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-91" dt="" by="746" sby="2738" ng="10" na="10">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="2844" it="0" lt="2844" ct="0" ts="1595029880946" s="false" lb="7.1 - Seleccionar Asiento" rc="404" rm="Not Found" tn="MyTrips 1-96" dt="text" by="781" sby="630" ng="8" na="8">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Accept: application/json, text/plain, */*
+Accept-Language: es-PA
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Host: api-uat.copaair.com
+Origin: https://seats-uat.copaair.com
+Referer: https://seats-uat.copaair.com/seat/mytrips/NAVARRO/AENLI1/1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Type: application/json;charset=UTF-8
+Content-Length: 66
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;Unable to assign one or more seats in the reservation.&quot;,&quot;code&quot;:3008}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;seats&quot;:[{&quot;seatNumber&quot;:&quot;6F&quot;,&quot;passengerKey&quot;:&quot;1&quot;,&quot;flightKey&quot;:&quot;1&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/seats/flightmap/seats/AENLI1/assign</java.net.URL>
+</httpSample>
+<sample t="2844" it="1" lt="2844" ct="0" ts="1595029880946" s="false" lb="7 - Clic Seleccione Pasajero" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-96" dt="" by="781" sby="630" ng="8" na="8">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="6394" it="0" lt="6394" ct="76" ts="1595029895954" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-93" dt="text" by="746" sby="2738" ng="7" na="7">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENL3L&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;5E&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="6394" it="60000" lt="6394" ct="76" ts="1595029835947" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-93" dt="" by="746" sby="2738" ng="7" na="7">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="958" it="0" lt="958" ct="0" ts="1595029920427" s="false" lb="8.3 - BaggageAllowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-98" dt="text" by="686" sby="414" ng="7" na="7">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: http://mytrips-uat.copaair.com
+Host: api-uat.copaair.com
+Content-Type:  application/json
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Accept-Language: es-PA
+Content-Length: 78
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;ABELINO&quot;,&quot;lastName&quot;:&quot;BONILLA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1LM</java.net.URL>
+</httpSample>
+<sample t="2636" it="3" lt="2636" ct="0" ts="1595029919227" s="false" lb="8 - Finalizar Seleccion" rc="" rm="Number of samples in transaction : 3, number of failing samples : 1" tn="MyTrips 1-98" dt="" by="5694" sby="1200" ng="7" na="7">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="6886" it="0" lt="6886" ct="78" ts="1595029948146" s="false" lb="9A.21 - Purchase" rc="404" rm="Not Found" tn="MyTrips 1-96" dt="text" by="746" sby="2738" ng="6" na="6">
+  <assertionResult>
+    <name>JSON validate Payment OK</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Expected to find an object with property [&apos;message&apos;] in path $ but found &apos;net.minidev.json.JSONArray&apos;. This is not a json object according to the JsonProvider: &apos;com.jayway.jsonpath.spi.json.JsonSmartJsonProvider&apos;.</failureMessage>
+  </assertionResult>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-pa
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Host: api-uat.copaair.com
+Origin: https://secure-uat.copaair.com
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 2189
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;message&quot;:&quot;An Error has occurred&quot;,&quot;code&quot;:0}]</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;purchaser&quot;:{&quot;name&quot;:&quot;Yarineth Flores&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;securityData&quot;:{&quot;deviceFingerPrint&quot;:&quot;a76f1e98f02af0e1db4728999a839bf99ffd6738&quot;},&quot;phone&quot;:&quot;65783456&quot;,&quot;areaCode&quot;:&quot;55&quot;},&quot;detail&quot;:{&quot;card&quot;:{&quot;detail&quot;:&quot;LS0tLS1CRUdJTiBQR1AgTUVTU0FHRS0tLS0tDQpWZXJzaW9uOiBPcGVuUEdQLmpzIHY0LjEwLjQNCkNvbW1lbnQ6IGh0dHBzOi8vb3BlbnBncGpzLm9yZw0KDQp3Y0RNQTFBeFF4YmdGNmVYQVF2L1hoT1dhajdzZE5SM09oLy9LWS9tUGFOR21WakNXcmpiZ3VYWTBWcXgNClpMMzBkbjgyaGtYRkJ4VStBaXhuZE42bUNRbDE5WHVERFlWRVJDeDZpVGJmT1BaRHZOanlKWDZlQjA1SA0KSXlHOHZPWWZCdWE1YzVWK2xXbDhjcDVxZENIUW5JZTkxckNnZmxJcFFBVVdRVlhMUnVRYzNLa0FjMWtoDQp4WHkrMnlDV2tBRTVBQkRuS2JLajZDbnp4Y2FUMG5GSTBTWnh3Q2xnOEgyODlaQ3hPOG55bnhYbzFhT3QNCnF1TEVSRENlZEFVQlFtZGNJYy9oL2pkbTRIZUdRMHZtQWdURjFzdDhDT29ENnRIU0FTQXBJNnRSNDY3SQ0KSWpuV0V3R0ZNdytNUlFjYUJ2R2U2dmhqcDFqRUtqMlFmL0NlZ1c3UzdDQVBVRUVUdDlJRU0xZWIwSG5CDQozYjlOamxIUFVHWnY3RnpOR2RRaFV2RkoyT1k0SWw2NmREcXczNk04c2ZnczlmMHoyd0E2Tmxtc2hab3UNCnZnM0RRVGsrQUZ3aFpHcnBQUWFtKzd2VmJRWmM5NVdyWU5zYVVBY0lWc09NenlrbDE0Q1A1a1V1VW9zdg0KL0k3TytSQVpDcGxkRGpSME05WkE3TGl2MlB6RldoaXJya2d0NmJpSTQ0SndGb214aXhjWDBub0JvbGlHDQp6Zmc5ZUlZYXV2ZlZ4N1E5SFowT05DWmZ3NmUyUGZMd3F3UzJFYyt0bmYwam00OFdHa3djVUZuQW42cDkNCk1CYld6SVkrMjV3MW1OTFBEOEp4T3lLOEZJcElJTUdYWVBweENXN2pqWkt5T0lCYXk2VGNpbmN0OHg4dg0KOElvdVQ3Rlg5cjdvS0VQWDczQ042dzVCNVZ2T2ZkQ21sZ01hbFE9PQ0KPU5JbTkNCi0tLS0tRU5EIFBHUCBNRVNTQUdFLS0tLS0NCg==&quot;,&quot;address&quot;:{&quot;line&quot;:&quot;Brasil&quot;,&quot;city&quot;:&quot;Brasilia&quot;,&quot;state&quot;:&quot;BR&quot;,&quot;zipCode&quot;:&quot;12345&quot;,&quot;country&quot;:{&quot;name&quot;:&quot;Brasil&quot;,&quot;iso2&quot;:&quot;BR&quot;,&quot;iso3&quot;:&quot;BRA&quot;,&quot;phoneCodes&quot;:[55]}},&quot;cardCode&quot;:&quot;VI&quot;},&quot;amount&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;USD&quot;},&quot;pType&quot;:&quot;PRD&quot;},&quot;reservationInfo&quot;:{&quot;pnr&quot;:&quot;AENLI1&quot;,&quot;passengers&quot;:[{&quot;docType&quot;:&quot;UNDEFINED&quot;,&quot;mail&quot;:&quot;performance@copa.com&quot;,&quot;firstName&quot;:&quot;Yarineth&quot;,&quot;surname&quot;:&quot;Flores&quot;,&quot;ticketNumber&quot;:&quot;2302174351494&quot;,&quot;issueDate&quot;:&quot;2020-07-03&quot;,&quot;typeCode&quot;:&quot;ADT&quot;,&quot;key&quot;:&quot;1&quot;,&quot;flights&quot;:[{&quot;flightNumber&quot;:531,&quot;couponNumber&quot;:1,&quot;operatingAirlineCode&quot;:&quot;CM&quot;,&quot;marketingAirlineCode&quot;:&quot;CM&quot;,&quot;departureTime&quot;:&quot;2020-08-07T16:07:00-05:00&quot;,&quot;arrivalTime&quot;:&quot;2020-08-07T17:28:00-05:00&quot;,&quot;departureLocation&quot;:&quot;PTY&quot;,&quot;arrivalLocation&quot;:&quot;MDE&quot;,&quot;seatSelected&quot;:&quot;6F&quot;,&quot;seatCategory&quot;:&quot;Premium&quot;,&quot;baseFare&quot;:27.5,&quot;taxesFare&quot;:1.93,&quot;flightClass&quot;:&quot;H&quot;,&quot;flightKey&quot;:&quot;1&quot;,&quot;seatCode&quot;:&quot;OC&quot;,&quot;seatSubCode&quot;:&quot;0B5&quot;}]}]}}</queryString>
+  <java.net.URL>https://seats-uat.copaair.com/payments/payment/purchase</java.net.URL>
+</httpSample>
+<sample t="6886" it="60000" lt="6886" ct="78" ts="1595029888139" s="false" lb="9A.2 - Confirmar Pago" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="MyTrips 1-96" dt="" by="746" sby="2738" ng="6" na="6">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="858" it="0" lt="858" ct="0" ts="1595029960284" s="false" lb="8.3 - BaggageAllowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-100" dt="text" by="686" sby="413" ng="6" na="6">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: http://mytrips-uat.copaair.com
+Host: api-uat.copaair.com
+Content-Type:  application/json
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Accept-Language: es-PA
+Content-Length: 77
+User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;ANTONIO&quot;,&quot;lastName&quot;:&quot;WALTER&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1LQ</java.net.URL>
+</httpSample>
+<sample t="2459" it="1" lt="2459" ct="0" ts="1595029959437" s="false" lb="8 - Finalizar Seleccion" rc="" rm="Number of samples in transaction : 3, number of failing samples : 1" tn="MyTrips 1-100" dt="" by="5691" sby="1198" ng="6" na="6">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="799" it="0" lt="799" ct="0" ts="1595030003417" s="false" lb="11.3 - Baggage Allowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-98" dt="text" by="788" sby="699" ng="4" na="4">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-PA
+Connection: keep-alive
+Content-Type: application/json
+Host: api-uat.copaair.com
+Origin: https://mytrips-uat.copaair.com
+Referer: https://mytrips-uat.copaair.com/trip-detail/AEN1LM/BONILLA
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 78
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;ABELINO&quot;,&quot;lastName&quot;:&quot;BONILLA&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1LM</java.net.URL>
+</httpSample>
+<sample t="5002" it="1" lt="5002" ct="0" ts="1595030000866" s="false" lb="11 - Add New Trip" rc="" rm="Number of samples in transaction : 5, number of failing samples : 1" tn="MyTrips 1-98" dt="" by="8711" sby="3039" ng="3" na="3">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="981" it="0" lt="981" ct="0" ts="1595030044690" s="false" lb="11.3 - Baggage Allowance" rc="500" rm="Internal Server Error" tn="MyTrips 1-100" dt="text" by="788" sby="697" ng="1" na="1">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: es-PA
+Connection: keep-alive
+Content-Type: application/json
+Host: api-uat.copaair.com
+Origin: https://mytrips-uat.copaair.com
+Referer: https://mytrips-uat.copaair.com/trip-detail/AEN1LQ/WALTER
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.173
+Content-Length: 77
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;NO VALID FARE FOR INPUT CRITERIA - CHK ITIN(BKDATES)&quot;,&quot;code&quot;:46}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;passengers&quot;:[{&quot;givenName&quot;:&quot;ANTONIO&quot;,&quot;lastName&quot;:&quot;WALTER&quot;,&quot;typeCode&quot;:&quot;ADT&quot;}]}</queryString>
+  <java.net.URL>https://api-uat.copaair.com/mytrips/reservation/baggageallowance/AEN1LQ</java.net.URL>
+</httpSample>
+<sample t="5019" it="2" lt="5018" ct="0" ts="1595030042177" s="false" lb="11 - Add New Trip" rc="" rm="Number of samples in transaction : 5, number of failing samples : 1" tn="MyTrips 1-100" dt="" by="8709" sby="3033" ng="1" na="1">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+
+</testResults>

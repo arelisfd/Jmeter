@@ -1,0 +1,17 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Filename,Latency,Encoding,SampleCount,ErrorCount,Hostname,IdleTime,Connect
+1595290150407,668,people 1,200,OK,Thread Group 1-1,text,false,The User Id is wrong Luke Skywalker1595290151076,976,127,3,3,https://swapi.dev/api/people/1/,,668,ISO-8859-1,1,1,neurobinlap,0,493
+1595290151100,164,people 404,404,NOT FOUND,Thread Group 1-1,text,false,,322,127,4,4,https://swapi.dev/api/people/0/,,164,ISO-8859-1,1,1,neurobinlap,0,0
+1595290151265,175,starships 1,200,OK,Thread Group 1-1,text,false,The User Id is wrong Death Star1595290151076,922,130,4,4,https://swapi.dev/api/starships/9/,,175,ISO-8859-1,1,1,neurobinlap,0,0
+1595290150647,820,people 1,200,OK,Thread Group 1-2,text,false,The User Id is wrong Luke Skywalker1595290151467,976,127,4,4,https://swapi.dev/api/people/1/,,820,ISO-8859-1,1,1,neurobinlap,0,604
+1595290151444,157,starships 404,404,NOT FOUND,Thread Group 1-1,text,false,,322,130,4,4,https://swapi.dev/api/starships/0/,,157,ISO-8859-1,1,1,neurobinlap,0,0
+1595290150897,700,people 1,200,OK,Thread Group 1-3,text,false,The User Id is wrong Luke Skywalker1595290151597,976,127,4,4,https://swapi.dev/api/people/1/,,700,ISO-8859-1,1,1,neurobinlap,0,531
+1595290151481,221,people 404,404,NOT FOUND,Thread Group 1-2,text,false,,322,127,3,3,https://swapi.dev/api/people/0/,,221,ISO-8859-1,1,1,neurobinlap,0,0
+1595290151634,174,people 404,404,NOT FOUND,Thread Group 1-3,text,false,,322,127,3,3,https://swapi.dev/api/people/0/,,174,ISO-8859-1,1,1,neurobinlap,0,0
+1595290151704,200,starships 1,200,OK,Thread Group 1-2,text,false,The User Id is wrong Death Star1595290151467,922,130,3,3,https://swapi.dev/api/starships/9/,,200,ISO-8859-1,1,1,neurobinlap,0,0
+1595290151810,186,starships 1,200,OK,Thread Group 1-3,text,false,The User Id is wrong Death Star1595290151597,922,130,3,3,https://swapi.dev/api/starships/9/,,185,ISO-8859-1,1,1,neurobinlap,0,0
+1595290151146,862,people 1,200,OK,Thread Group 1-4,text,false,The User Id is wrong Luke Skywalker1595290152010,976,127,3,3,https://swapi.dev/api/people/1/,,862,ISO-8859-1,1,1,neurobinlap,0,641
+1595290151906,194,starships 404,404,NOT FOUND,Thread Group 1-2,text,false,,322,130,3,3,https://swapi.dev/api/starships/0/,,194,ISO-8859-1,1,1,neurobinlap,0,0
+1595290152011,169,starships 404,404,NOT FOUND,Thread Group 1-3,text,false,,322,130,2,2,https://swapi.dev/api/starships/0/,,169,ISO-8859-1,1,1,neurobinlap,0,0
+1595290152041,215,people 404,404,NOT FOUND,Thread Group 1-4,text,false,,322,127,1,1,https://swapi.dev/api/people/0/,,215,ISO-8859-1,1,1,neurobinlap,0,0
+1595290152258,208,starships 1,200,OK,Thread Group 1-4,text,false,The User Id is wrong Death Star1595290152010,922,130,1,1,https://swapi.dev/api/starships/9/,,208,ISO-8859-1,1,1,neurobinlap,0,0
+1595290152467,199,starships 404,404,NOT FOUND,Thread Group 1-4,text,false,,322,130,1,1,https://swapi.dev/api/starships/0/,,199,ISO-8859-1,1,1,neurobinlap,0,0

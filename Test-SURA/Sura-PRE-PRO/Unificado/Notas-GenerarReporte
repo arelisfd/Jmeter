@@ -1,0 +1,31 @@
+*--------------------------------------------
+
+
+
+jmeter -n -t C:\SURA_PTEST\UAT\3-Unificados\Unificado\Flujo-Integrado.jmx
+
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\11-Superintendencia.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\11-HTMLSuperintendencia
+
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\12-Remesas.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\12-HTMLRemesas
+
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\13-PersonaNOConsultable.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\13-HTMLPersonaNOConsultable
+
+
+
+
+/****
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\1-RegistroCliente.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\1-HTMLRegistroCliente
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\2-Cotizacion.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\2-HTMLCotizacion
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\3-CreacioPagoPoliza.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\3-HTMLCreacionPagoPoliza
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\6-Cancelacion.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\6-HTMLCancelacion
+
+jmeter -g C:\SURA_PTEST\UAT\3-Unificados\Unificado\8-Devolucion.csv -o C:\SURA_PTEST\UAT\3-Unificados\Unificado\8-HTMLDevolucion
+
+
